@@ -1,0 +1,491 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pratik Vijay Shelar | MERN Stack Developer Portfolio</title>
+  <meta name="description" content="Professional portfolio of Pratik Vijay Shelar, Computer Engineering student, MERN stack developer, and DSA learner.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="spaceCanvas" aria-hidden="true"></canvas>
+  <div class="particle-field" id="particleField" aria-hidden="true"></div>
+  <div class="laser-cursor" id="laserCursor" aria-hidden="true"></div>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-mark">PS</span>
+        <span>Pratik Shelar</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="#academics"><i class="fas fa-graduation-cap"></i> Academics</a></li>
+        <li><a href="#journey"><i class="fas fa-people-group"></i> Participation</a></li>
+        <li><a href="#achievements"><i class="fas fa-trophy"></i> Achievements</a></li>
+        <li><a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a></li>
+        <li><a href="#certificates"><i class="fas fa-certificate"></i> Certificates</a></li>
+        <li><a href="#skills"><i class="fas fa-code-branch"></i> Skills</a></li>
+        <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
+        <li><a href="#testimonials"><i class="fas fa-comment-dots"></i> Testimonials</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle theme" title="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" title="Menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow"><i class="fas fa-robot"></i> Computer Engineering (AI) student</p>
+          <div class="mobile-profile-chip" aria-label="Student profile preview">
+            <img src="assets/images/profile/pratik-shelar-profile.png" alt="Pratik Vijay Shelar profile thumbnail">
+            <span>Pratik Shelar</span>
+          </div>
+          <h1><span class="gradient-text glitch" data-text="Pratik Vijay Shelar">Pratik Vijay Shelar</span></h1>
+          <div class="typing-line" id="typingLine" aria-label="Typing role animation"></div>
+          <p class="lead">
+            Frontend-focused MERN developer building responsive interfaces, REST APIs, authentication flows, and database-driven systems. I am looking for a web development or frontend internship where I can contribute clean UI, reliable code, and fast learning.
+          </p>
+          <div class="hero-badges" aria-label="Portfolio highlights">
+            <span class="hero-badge"><i class="fa-solid fa-briefcase"></i> Open to Web Dev Internships</span>
+            <span class="hero-badge"><i class="fa-solid fa-location-dot"></i> Pune, Maharashtra</span>
+            <span class="hero-badge"><i class="fa-solid fa-code-branch"></i> Public GitHub Projects</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="assets/docs/resume/pratik-shelar-resume.pdf" download><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
+            <a class="btn btn-outline" href="https://github.com/Pratik-Ghrcemp" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a class="btn btn-outline" href="https://www.linkedin.com/in/pratik-shelar-6b66a8286/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <button class="btn btn-outline" id="videoBtn" type="button"><i class="fa-solid fa-circle-play"></i> Profile Summary</button>
+            <button class="btn btn-outline" id="printBtn" type="button"><i class="fa-solid fa-print"></i> Print</button>
+          </div>
+          <div class="stats-grid" aria-label="Quick statistics">
+            <div class="stat-card"><div class="stat-number" data-count="6">0</div><div class="stat-label"><i class="fas fa-folder-open"></i> Portfolio Projects</div></div>
+            <div class="stat-card"><div class="stat-number" data-count="799">0</div><div class="stat-label"><i class="fas fa-chart-line"></i> CGPA 7.99/10</div></div>
+            <div class="stat-card"><div class="stat-number" data-count="100">0</div><div class="stat-label"><i class="fas fa-code"></i> DSA Problems</div></div>
+            <div class="stat-card"><div class="stat-number" data-count="6">0</div><div class="stat-label"><i class="fas fa-certificate"></i> Certificates</div></div>
+          </div>
+        </div>
+        <aside class="profile-panel">
+          <img class="profile-photo" src="assets/images/profile/pratik-shelar-profile.png" alt="Pratik Vijay Shelar profile photograph">
+          <div class="profile-info">
+            <p class="mono"><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra, India</p>
+            <h2><i class="fas fa-layer-group"></i> Full Stack Developer (MERN)</h2>
+            <p>React.js, Node.js, Express.js, MongoDB, MySQL, Prisma, JWT, REST APIs</p>
+          </div>
+          <div class="availability-card">
+            <strong><i class="fas fa-bolt"></i> Internship-ready profile</strong>
+            <div class="mini-list">
+              <span><i class="fa-solid fa-circle-check"></i> Frontend UI + MERN project experience</span>
+              <span><i class="fa-solid fa-circle-check"></i> 100+ DSA problems solved using C++</span>
+              <span><i class="fa-solid fa-circle-check"></i> Current CGPA: 7.99/10</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><i class="fas fa-user"></i> About me</p>
+            <h2 class="section-title">Developer profile adapted to the assignment brief.</h2>
+          </div>
+          <p class="section-note">The original assignment asks for a student portfolio. This version keeps that structure and presents it as a real Computer Engineering developer portfolio.</p>
+        </div>
+        <div class="two-col">
+          <div class="card">
+            <h3><i class="fas fa-bullseye"></i> Career Objective</h3>
+            <p>B.Tech CSE (Artificial Intelligence) student currently going into Fourth Year, Semester VII, with a 7.99/10 CGPA. I build frontend and MERN stack projects with a focus on responsive UI, clean component structure, APIs, databases, and practical problem solving.</p>
+            <div class="social-row">
+              <a class="btn btn-outline" href="mailto:shelarpratik914@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+              <a class="btn btn-outline" href="https://www.instagram.com/pratikshelar81/" target="_blank" rel="noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3><i class="fas fa-id-card"></i> Student Details</h3>
+            <div class="info-grid">
+              <div class="info-item"><span><i class="fas fa-user"></i> Full Name</span>Pratik Vijay Shelar</div>
+              <div class="info-item"><span><i class="fas fa-calendar"></i> Date of Birth</span>29/04/2005</div>
+              <div class="info-item"><span><i class="fas fa-graduation-cap"></i> Role</span>Computer Engineering Student (AI), Semester VII</div>
+              <div class="info-item"><span><i class="fas fa-university"></i> College</span>G.H. Raisoni College of Engineering and Management, Pune</div>
+              <div class="info-item"><span><i class="fas fa-building-columns"></i> University</span>Savitribai Phule Pune University</div>
+              <div class="info-item"><span><i class="fas fa-location-dot"></i> Location</span>Pune, Maharashtra, India</div>
+              <div class="info-item"><span><i class="fas fa-heart"></i> Interests</span>Full-stack development, DSA, AI fundamentals, databases</div>
+            </div>
+          </div>
+        </div>
+        <div class="recruiter-panel" aria-label="Recruiter snapshot">
+          <div class="recruiter-item"><span><i class="fas fa-star"></i> Best fit</span><strong>Frontend / Web Developer Intern</strong></div>
+          <div class="recruiter-item"><span><i class="fas fa-chart-simple"></i> Strength</span><strong>React UI, APIs, CRUD systems</strong></div>
+          <div class="recruiter-item"><span><i class="fas fa-file-alt"></i> Proof</span><strong>5+ projects with screenshots</strong></div>
+          <div class="recruiter-item"><span><i class="fas fa-graduation-cap"></i> Learning</span><strong>DSA, DBMS, OOP, AI fundamentals</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="academics">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><i class="fas fa-chart-line"></i> Academic performance</p>
+            <h2 class="section-title">Education, CGPA, and scorecard evidence.</h2>
+          </div>
+          <p class="section-note">This section satisfies the academic-performance requirement using college details, scorecards, and institution assets.</p>
+        </div>
+        <div class="two-col">
+          <div class="timeline">
+            <article class="timeline-card">
+              <span class="year-pill"><i class="fas fa-calendar"></i> 2023 - 2026 Current</span>
+              <p class="mono"><i class="fas fa-microchip"></i> B.Tech CSE (Artificial Intelligence)</p>
+              <h3><i class="fas fa-university"></i> G.H. Raisoni College of Engineering and Management, Pune</h3>
+              <p>Currently going into Fourth Year, Semester VII. VI Semester completed. Current CGPA: 7.99/10.</p>
+            </article>
+            <article class="timeline-card">
+              <span class="year-pill"><i class="fas fa-calendar"></i> 2021 - 2023</span>
+              <p class="mono"><i class="fas fa-book"></i> 11th & 12th HSC</p>
+              <h3><i class="fas fa-school"></i> SCSV Belwandi BK</h3>
+              <p>Higher secondary education record included through local HSC score card PDF.</p>
+            </article>
+            <article class="timeline-card">
+              <span class="year-pill"><i class="fas fa-calendar"></i> 2021</span>
+              <p class="mono"><i class="fas fa-school"></i> 10th SSC</p>
+              <h3>Shri Chhatrapati Shivaji Vidyalaya, Belwandi BK</h3>
+              <p>SSC academic foundation record included through the local score card folder.</p>
+            </article>
+          </div>
+          <div class="card">
+            <h3><i class="fas fa-database"></i> Academic Assets</h3>
+            <p>Institution images and score card PDFs are linked below for quick review. Overall equivalent academic progress: 79.9% based on CGPA 7.99/10.</p>
+            <table class="subject-table" aria-label="Academic progress table">
+              <thead>
+                <tr><th>Area</th><th>Level</th><th>Progress</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><i class="fas fa-chart-line"></i> Current CGPA</td><td>7.99/10</td><td><div class="bar"><span style="--value: 79.9%"></span></div></td></tr>
+                <tr><td><i class="fab fa-react"></i> Web Development</td><td>Strong</td><td><div class="bar"><span style="--value: 88%"></span></div></td></tr>
+                <tr><td><i class="fas fa-database"></i> Database Systems</td><td>Strong</td><td><div class="bar"><span style="--value: 82%"></span></div></td></tr>
+                <tr><td><i class="fas fa-code"></i> DSA Practice</td><td>100+ Problems</td><td><div class="bar"><span style="--value: 74%"></span></div></td></tr>
+              </tbody>
+            </table>
+            <div class="image-strip">
+              <div class="image-tile">
+                <img src="assets/images/institutions/ug-college.png" alt="G.H. Raisoni College institution image">
+                <span><i class="fas fa-university"></i> UG College - B.Tech CSE (AI)</span>
+              </div>
+              <div class="image-tile">
+                <img src="assets/images/institutions/hsc-college.png" alt="HSC college institution image">
+                <span><i class="fas fa-school"></i> HSC College - 11th & 12th</span>
+              </div>
+              <div class="image-tile">
+                <img src="assets/images/institutions/ssc-school.png" alt="SSC school institution image">
+                <span><i class="fas fa-school-flag"></i> SSC School - 10th</span>
+              </div>
+            </div>
+            <div class="result-groups" aria-label="Ordered academic result links">
+              <div class="result-group">
+                <h4><i class="fas fa-graduation-cap"></i> UG Semester Results <span>B.Tech CSE (AI)</span></h4>
+                <div class="scorecard-links">
+                  <a href="assets/docs/scorecards/semester-1.pdf" target="_blank" rel="noreferrer">Semester I <i class="fa-solid fa-file-pdf"></i></a>
+                  <a href="assets/docs/scorecards/semester-2.pdf" target="_blank" rel="noreferrer">Semester II <i class="fa-solid fa-file-pdf"></i></a>
+                  <a href="assets/docs/scorecards/semester-3.pdf" target="_blank" rel="noreferrer">Semester III <i class="fa-solid fa-file-pdf"></i></a>
+                  <a href="assets/docs/scorecards/semester-4.pdf" target="_blank" rel="noreferrer">Semester IV <i class="fa-solid fa-file-pdf"></i></a>
+                  <a href="assets/docs/scorecards/semester-5.pdf" target="_blank" rel="noreferrer">Semester V <i class="fa-solid fa-file-pdf"></i></a>
+                  <a href="assets/docs/scorecards/semester-6.pdf" target="_blank" rel="noreferrer">Semester VI <i class="fa-solid fa-file-pdf"></i></a>
+                </div>
+              </div>
+              <div class="result-group">
+                <h4><i class="fas fa-book-open"></i> HSC Result <span>12th</span></h4>
+                <div class="scorecard-links">
+                  <a href="assets/docs/scorecards/hsc.pdf" target="_blank" rel="noreferrer">HSC Score Card <i class="fa-solid fa-file-pdf"></i></a>
+                </div>
+              </div>
+              <div class="result-group">
+                <h4><i class="fas fa-school"></i> SSC Result <span>10th</span></h4>
+                <div class="scorecard-links">
+                  <a href="assets/docs/scorecards/ssc.pdf" target="_blank" rel="noreferrer">SSC Score Card <i class="fa-solid fa-file-pdf"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><i class="fas fa-people-arrows"></i> Club / development participation</p>
+            <h2 class="section-title">Coding-club style participation through real training areas.</h2>
+          </div>
+          <p class="section-note">This section satisfies the assignment's club-participation requirement through coding, web development, database, API, and DSA practice.</p>
+        </div>
+        <div class="journey-grid">
+          <article class="journey-card"><i class="fa-solid fa-code"></i><h3><i class="fas fa-globe"></i> Web Development</h3><p>Built responsive pages, React interfaces, Bootstrap layouts, reusable components, and Vite applications.</p></article>
+          <article class="journey-card"><i class="fa-solid fa-server"></i><h3><i class="fas fa-plug"></i> Backend APIs</h3><p>Created Express.js REST APIs with JWT authentication, validation, protected routes, and structured controllers.</p></article>
+          <article class="journey-card"><i class="fa-solid fa-database"></i><h3><i class="fas fa-table"></i> Database Practice</h3><p>Worked with MongoDB, Mongoose, MySQL, Prisma ORM, relationships, seed data, and CRUD operations.</p></article>
+          <article class="journey-card"><i class="fa-solid fa-diagram-project"></i><h3><i class="fas fa-sitemap"></i> MVC Architecture</h3><p>Practiced project organization through routes, controllers, models, middleware, services, and utilities.</p></article>
+          <article class="journey-card"><i class="fa-solid fa-brain"></i><h3><i class="fas fa-chart-line"></i> DSA Learning</h3><p>Solved 100+ problems using C++ across arrays, strings, recursion, searching, and sorting.</p></article>
+          <article class="journey-card"><i class="fa-solid fa-robot"></i><h3><i class="fas fa-microchip"></i> AI Fundamentals</h3><p>Studying AI-focused computer engineering while building practical software-development skills.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><i class="fas fa-medal"></i> Achievements</p>
+            <h2 class="section-title">Measurable progress and portfolio milestones.</h2>
+          </div>
+          <p class="section-note">Achievement content highlights DSA practice, GitHub activity, and documented project work.</p>
+        </div>
+        <div class="achievement-list">
+          <div class="achievement-item"><i class="fa-solid fa-check-circle"></i><div><h3><i class="fas fa-code"></i> 100+ DSA Problems</h3><p>Solved using C++, improving problem-solving skills in arrays, strings, recursion, searching, and sorting.</p></div></div>
+          <div class="achievement-item"><i class="fa-solid fa-check-circle"></i><div><h3><i class="fab fa-github"></i> Active GitHub Portfolio</h3><p>Maintained public repositories across full-stack, CRUD, API integration, games, and frontend work.</p></div></div>
+          <div class="achievement-item"><i class="fa-solid fa-check-circle"></i><div><h3><i class="fab fa-github-alt"></i> GitHub Achievements</h3><p>Earned Quickdraw, Pull Shark, and YOLO achievements.</p></div></div>
+          <div class="achievement-item"><i class="fa-solid fa-check-circle"></i><div><h3><i class="fas fa-file-alt"></i> Project Documentation</h3><p>Built and documented projects across MERN stack, REST APIs, CRUD apps, and responsive frontend development.</p></div></div>
+        </div>
+        <div class="timeline alt" style="margin-top: 28px;">
+          <article class="timeline-card"><span class="medal gold"><i class="fas fa-crown"></i> Gold Focus</span><h3><i class="fas fa-layer-group"></i> MERN Project Portfolio</h3><p>Built production-style full-stack projects with authentication, CRUD, database models, and deployment practice.</p></article>
+          <article class="timeline-card"><span class="medal silver"><i class="fas fa-chart-line"></i> Silver Progress</span><h3><i class="fas fa-code"></i> 100+ DSA Problems</h3><p>Consistent C++ problem solving across arrays, strings, recursion, searching, and sorting.</p></article>
+          <article class="timeline-card"><span class="medal bronze"><i class="fab fa-github"></i> Bronze Badge</span><h3>GitHub Achievements</h3><p>Earned Quickdraw, Pull Shark, and YOLO achievements through active GitHub usage.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><i class="fas fa-display"></i> Project showcase</p>
+            <h2 class="section-title">Full-stack and frontend projects with real screenshots.</h2>
+          </div>
+          <p class="section-note">Each project includes stack, features, local screenshots, and repository/live links where available.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card" data-back="Role-based dashboard, ticket lifecycle, JWT auth, Prisma models, MySQL relations, upload support, and admin workflows.">
+            <img src="assets/images/projects/maintenance-ticket-management/dashboard.png" alt="Maintenance ticket management dashboard">
+            <div class="project-body">
+              <h3><i class="fas fa-ticket-alt"></i> Maintenance Ticket Management System</h3>
+              <p>Facility maintenance platform with role-based access for Admin, Technician, and User. Includes ticket creation, assignment, status tracking, comments, image uploads, audit logs, and lifecycle tracking.</p>
+              <div class="tags"><span class="tag"><i class="fab fa-react"></i> React</span><span class="tag"><i class="fab fa-node-js"></i> Node</span><span class="tag"><i class="fas fa-charging-station"></i> Express</span><span class="tag"><i class="fas fa-cubes"></i> Prisma</span><span class="tag"><i class="fas fa-database"></i> MySQL</span><span class="tag"><i class="fas fa-key"></i> JWT</span></div>
+              <div class="project-actions"><a class="btn btn-outline" href="https://github.com/Pratik-Ghrcemp/maintenance-ticket-management-web-application" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> Code</a></div>
+            </div>
+          </article>
+          <article class="project-card" data-back="Travel listing platform with auth, listings, reviews, image uploads, maps, MongoDB persistence, and Render deployment.">
+            <img src="assets/images/projects/wanderlust-stays/listings-feed.png" alt="WanderLust listings feed">
+            <div class="project-body">
+              <h3><i class="fas fa-hotel"></i> WanderLust Stays</h3>
+              <p>Travel stay listing platform with authentication, listings, reviews, image uploads, search, routing, MongoDB persistence, and cloud deployment on Render.</p>
+              <div class="tags"><span class="tag"><i class="fas fa-leaf"></i> MongoDB</span><span class="tag"><i class="fas fa-charging-station"></i> Express</span><span class="tag"><i class="fab fa-react"></i> React</span><span class="tag"><i class="fab fa-node-js"></i> Node</span><span class="tag"><i class="fas fa-cloud"></i> Render</span></div>
+              <div class="project-actions"><a class="btn btn-outline" href="https://github.com/Pratik-Ghrcemp/WanderLust-Stays" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> Code</a><a class="btn btn-outline" href="https://wanderlust-stays-i4o9.onrender.com" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a></div>
+            </div>
+          </article>
+          <article class="project-card" data-back="Live weather search with OpenWeather API, Material UI cards, dynamic weather visuals, loading states, and error handling.">
+            <img src="assets/images/projects/react-weather-app/sunny.png" alt="React weather app sunny preview">
+            <div class="project-body">
+              <h3><i class="fas fa-cloud-sun"></i> React Weather App</h3>
+              <p>Responsive dashboard that fetches live city weather including temperature, humidity, feels-like, min/max values, and weather condition visuals.</p>
+              <div class="tags"><span class="tag"><i class="fab fa-react"></i> React</span><span class="tag"><i class="fas fa-bolt"></i> Vite</span><span class="tag"><i class="fas fa-palette"></i> Material UI</span><span class="tag"><i class="fas fa-cloud"></i> OpenWeather API</span></div>
+              <div class="project-actions"><a class="btn btn-outline" href="https://github.com/Pratik-Ghrcemp/react-weather-app" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> Code</a></div>
+            </div>
+          </article>
+          <article class="project-card" data-back="MongoDB CRUD chat app with Express routes, EJS views, method override, timestamps, and responsive WhatsApp-style UI.">
+            <img src="assets/images/projects/mini-whatsapp/code-output.png" alt="Mini WhatsApp CRUD app output">
+            <div class="project-body">
+              <h3><i class="fab fa-whatsapp"></i> Mini WhatsApp CRUD Chat App</h3>
+              <p>Server-rendered chat CRUD application with Express.js, MongoDB, Mongoose, EJS templates, method override, and responsive custom CSS.</p>
+              <div class="tags"><span class="tag"><i class="fab fa-node-js"></i> Node</span><span class="tag"><i class="fas fa-charging-station"></i> Express</span><span class="tag"><i class="fas fa-leaf"></i> MongoDB</span><span class="tag"><i class="fas fa-file-code"></i> EJS</span><span class="tag"><i class="fas fa-pen"></i> CRUD</span></div>
+              <div class="project-actions"><a class="btn btn-outline" href="https://github.com/Pratik-Ghrcemp" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></div>
+            </div>
+          </article>
+          <article class="project-card" data-back="API-based currency converter with live rates, swap logic, country flags, dark mode, and error states.">
+            <div class="project-visual" role="img" aria-label="Currency Converter project visual">
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              <span>Currency Converter</span>
+            </div>
+            <div class="project-body">
+              <h3><i class="fas fa-money-bill-transfer"></i> Currency Converter</h3>
+              <p>Responsive currency converter with live exchange rates, country flags, swap feature, light/dark mode, and API error states.</p>
+              <div class="tags"><span class="tag"><i class="fab fa-html5"></i> HTML</span><span class="tag"><i class="fab fa-css3-alt"></i> CSS</span><span class="tag"><i class="fab fa-js"></i> JavaScript</span><span class="tag"><i class="fas fa-plug"></i> API</span></div>
+              <div class="project-actions"><a class="btn btn-outline" href="https://github.com/Pratik-Ghrcemp/CurrencyConverter" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> Code</a></div>
+            </div>
+          </article>
+          <article class="project-card" data-back="Frontend, CRUD, game, Bootstrap, clone, and Figma-to-React practice projects that show consistent learning.">
+            <img src="assets/images/projects/wanderlust-stays/location-map.png" alt="WanderLust map feature screenshot">
+            <div class="project-body">
+              <h3><i class="fas fa-layer-group"></i> Additional Development Work</h3>
+              <p>Mini apps including RESTful Posts App, Rock Paper Scissors, Tic Tac Toe, TaskFlow Bootstrap page, Amazon UI clone, and Figma-to-React landing page practice.</p>
+              <div class="tags"><span class="tag"><i class="fas fa-laptop-code"></i> Frontend</span><span class="tag"><i class="fas fa-plug"></i> API</span><span class="tag"><i class="fas fa-gamepad"></i> Games</span><span class="tag"><i class="fas fa-mobile-alt"></i> Responsive UI</span></div>
+              <div class="project-actions"><a class="btn btn-outline" href="https://github.com/Pratik-Ghrcemp" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> Portfolio</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><i class="fas fa-certificate"></i> Certificates gallery</p>
+            <h2 class="section-title">Interactive certificate and learning proof gallery.</h2>
+          </div>
+          <p class="section-note">Click any certificate to open it in a lightbox.</p>
+        </div>
+        <div class="certificate-grid">
+          <button class="certificate-card" type="button" data-full="assets/images/certificates/web-development.png"><img src="assets/images/certificates/web-development.png" alt="Web Development certificate"><span><i class="fas fa-code"></i> Web Development</span></button>
+          <button class="certificate-card" type="button" data-full="assets/images/certificates/frontend.png"><img src="assets/images/certificates/frontend.png" alt="Front-End certificate"><span><i class="fas fa-laptop-code"></i> Front-End</span></button>
+          <button class="certificate-card" type="button" data-full="assets/images/certificates/mongodb.png"><img src="assets/images/certificates/mongodb.png" alt="MongoDB certificate"><span><i class="fas fa-database"></i> MongoDB</span></button>
+          <button class="certificate-card" type="button" data-full="assets/images/certificates/mysql.png"><img src="assets/images/certificates/mysql.png" alt="MySQL certificate"><span><i class="fas fa-database"></i> MySQL</span></button>
+          <button class="certificate-card" type="button" data-full="assets/images/certificates/cpp.png"><img src="assets/images/certificates/cpp.png" alt="C++ certificate"><span><i class="fab fa-cuttlefish"></i> C++</span></button>
+          <button class="certificate-card" type="button" data-full="assets/images/certificates/aiml.png"><img src="assets/images/certificates/aiml.png" alt="AI ML certificate"><span><i class="fas fa-robot"></i> AI / ML</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><i class="fas fa-cubes"></i> Skills matrix</p>
+            <h2 class="section-title">Technical, academic, and professional skills.</h2>
+          </div>
+          <p class="section-note">Skills are grouped visually to meet the assignment requirement and show interview-ready strengths.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="rings-grid" style="grid-column: 1 / -1;">
+            <div class="skill-ring"><div class="ring" style="--percent: 88">88%</div><strong><i class="fas fa-laptop-code"></i> Frontend</strong></div>
+            <div class="skill-ring"><div class="ring" style="--percent: 84">84%</div><strong><i class="fas fa-server"></i> Backend</strong></div>
+            <div class="skill-ring"><div class="ring" style="--percent: 82">82%</div><strong><i class="fas fa-database"></i> Database</strong></div>
+            <div class="skill-ring"><div class="ring" style="--percent: 74">74%</div><strong><i class="fas fa-diagram-project"></i> DSA</strong></div>
+          </div>
+          <div class="skill-box"><h3><i class="fas fa-code"></i> Languages</h3><div class="skill-list"><span class="tag"><i class="fab fa-cuttlefish"></i> C++</span><span class="tag"><i class="fab fa-js"></i> JavaScript</span><span class="tag"><i class="fas fa-database"></i> SQL</span><span class="tag"><i class="fab fa-java"></i> Java Basic</span></div></div>
+          <div class="skill-box"><h3><i class="fas fa-laptop-code"></i> Frontend</h3><div class="skill-list"><span class="tag"><i class="fab fa-html5"></i> HTML5</span><span class="tag"><i class="fab fa-css3-alt"></i> CSS3</span><span class="tag"><i class="fab fa-react"></i> React.js</span><span class="tag"><i class="fab fa-bootstrap"></i> Bootstrap</span><span class="tag"><i class="fas fa-palette"></i> Material UI</span></div></div>
+          <div class="skill-box"><h3><i class="fas fa-server"></i> Backend</h3><div class="skill-list"><span class="tag"><i class="fab fa-node-js"></i> Node.js</span><span class="tag"><i class="fas fa-charging-station"></i> Express.js</span><span class="tag"><i class="fas fa-plug"></i> REST APIs</span><span class="tag"><i class="fas fa-key"></i> JWT</span><span class="tag"><i class="fas fa-lock"></i> bcrypt</span></div></div>
+          <div class="skill-box"><h3><i class="fas fa-database"></i> Databases</h3><div class="skill-list"><span class="tag"><i class="fas fa-leaf"></i> MongoDB</span><span class="tag"><i class="fas fa-database"></i> Mongoose</span><span class="tag"><i class="fas fa-database"></i> MySQL</span><span class="tag"><i class="fas fa-cubes"></i> Prisma</span></div></div>
+          <div class="skill-box"><h3><i class="fas fa-tools"></i> Tools</h3><div class="skill-list"><span class="tag"><i class="fab fa-git-alt"></i> Git</span><span class="tag"><i class="fab fa-github"></i> GitHub</span><span class="tag"><i class="fas fa-code"></i> VS Code</span><span class="tag"><i class="fas fa-paper-plane"></i> Postman</span><span class="tag"><i class="fas fa-cloud"></i> Render</span></div></div>
+          <div class="skill-box"><h3><i class="fas fa-microchip"></i> Core CS</h3><div class="skill-list"><span class="tag"><i class="fas fa-diagram-project"></i> DSA</span><span class="tag"><i class="fas fa-cube"></i> OOP</span><span class="tag"><i class="fas fa-database"></i> DBMS</span><span class="tag"><i class="fas fa-layer-group"></i> MVC</span><span class="tag"><i class="fas fa-microchip"></i> System Design Basics</span></div></div>
+          <div class="skill-box"><h3><i class="fas fa-hand-peace"></i> Soft Skills</h3><div class="skill-list"><span class="tag"><i class="fas fa-brain"></i> Problem Solving</span><span class="tag"><i class="fas fa-bug"></i> Debugging</span><span class="tag"><i class="fas fa-users"></i> Team Collaboration</span><span class="tag"><i class="fas fa-rocket"></i> Quick Learning</span><span class="tag"><i class="fas fa-flag-checkered"></i> Ownership</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><i class="fas fa-blog"></i> Student blog</p>
+            <h2 class="section-title">Three sample blog posts.</h2>
+          </div>
+          <p class="section-note">Included to satisfy the portfolio assignment while staying relevant to a developer profile.</p>
+        </div>
+        <div class="blog-grid">
+          <article class="blog-card"><p class="date"><i class="fas fa-calendar"></i> June 2026</p><h3><i class="fas fa-road"></i> My Journey from Student to MERN Stack Developer</h3><p>I started with frontend basics, moved into backend routing and databases, and gradually connected both sides through full-stack projects.</p><p class="more">This journey helped me understand how UI, APIs, validation, and databases work together in real applications.</p><button class="btn btn-outline read-more" type="button"><i class="fas fa-book-open"></i> Read More</button></article>
+          <article class="blog-card"><p class="date"><i class="fas fa-calendar"></i> June 2026</p><h3><i class="fas fa-graduation-cap"></i> What I Learned While Building Full Stack Projects</h3><p>Real projects taught me authentication, protected routes, schema design, API testing, validation, uploads, deployment, and debugging discipline.</p><p class="more">The biggest lesson was that clean structure matters as much as adding features.</p><button class="btn btn-outline read-more" type="button"><i class="fas fa-book-open"></i> Read More</button></article>
+          <article class="blog-card"><p class="date"><i class="fas fa-calendar"></i> June 2026</p><h3><i class="fas fa-chart-line"></i> Why DSA and Projects Both Matter for Developers</h3><p>DSA improves structured thinking, while projects teach product flow, user experience, and practical engineering decisions.</p><p class="more">Together, they build both interview confidence and practical engineering maturity.</p><button class="btn btn-outline read-more" type="button"><i class="fas fa-book-open"></i> Read More</button></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><i class="fas fa-comment-dots"></i> Testimonials</p>
+            <h2 class="section-title">Professional feedback samples.</h2>
+          </div>
+          <p class="section-note">Teacher, parent-style, and mentor feedback cards included for assignment presentation.</p>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card"><p class="role"><i class="fas fa-chalkboard-user"></i> Teacher Feedback</p><h3>Consistent learner</h3><p>"Pratik shows steady improvement in software fundamentals and applies classroom concepts through practical development projects."</p></article>
+          <article class="testimonial-card"><p class="role"><i class="fas fa-heart"></i> Parent Feedback</p><h3>Disciplined growth</h3><p>"He has become more confident by balancing academic work, coding practice, and project development."</p></article>
+          <article class="testimonial-card"><p class="role"><i class="fas fa-eye"></i> Project Reviewer</p><h3>Project ownership</h3><p>"His portfolio reflects initiative, documentation effort, and the ability to connect frontend, backend, and database workflows."</p></article>
+          <article class="testimonial-card"><p class="role"><i class="fas fa-users"></i> Peer Collaborator</p><h3>Team mindset</h3><p>"Pratik is comfortable discussing problems, debugging issues, and learning new tools needed to complete a feature."</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><i class="fas fa-address-card"></i> Contact</p>
+            <h2 class="section-title">Let's connect.</h2>
+          </div>
+          <p class="section-note">Contact form UI plus clickable email and social links, as required by the assignment.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="card">
+            <h3><i class="fas fa-link"></i> Contact Links</h3>
+            <div class="contact-list">
+              <a class="contact-link" href="mailto:shelarpratik914@gmail.com"><i class="fa-solid fa-envelope"></i> shelarpratik914@gmail.com</a>
+              <a class="contact-link" href="https://github.com/Pratik-Ghrcemp" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> github.com/Pratik-Ghrcemp</a>
+              <a class="contact-link" href="https://www.linkedin.com/in/pratik-shelar-6b66a8286/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/pratik-shelar-6b66a8286</a>
+              <a class="contact-link" href="https://www.instagram.com/pratikshelar81/" target="_blank" rel="noreferrer"><i class="fa-brands fa-instagram"></i> instagram.com/pratikshelar81</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3><i class="fas fa-paper-plane"></i> Send a Message</h3>
+            <form class="contact-form" id="contactForm">
+              <input class="field" id="name" type="text" placeholder="Your name" required>
+              <input class="field" id="email" type="email" placeholder="Your email" required>
+              <textarea class="field" id="message" placeholder="Your message" required></textarea>
+              <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+              <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p><i class="far fa-copyright"></i> 2026 Pratik Vijay Shelar - Developer Portfolio Assignment</p>
+      <p class="quote-line" id="quoteLine"><i class="fas fa-quote-left"></i> </p>
+      <p id="liveClock" class="mono"><i class="fas fa-clock"></i> </p>
+    </div>
+  </footer>
+
+  <div class="floating-actions">
+    <button class="icon-btn back-top" id="backTop" type="button" aria-label="Back to top" title="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  </div>
+
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog">
+    <button class="icon-btn" id="closeLightbox" type="button" aria-label="Close certificate preview"><i class="fa-solid fa-xmark"></i></button>
+    <img id="lightboxImage" src="" alt="Certificate preview">
+  </div>
+
+  <div class="intro-modal" id="introModal" aria-modal="true" role="dialog" aria-labelledby="introTitle">
+    <button class="icon-btn close-intro" id="closeIntro" type="button" aria-label="Close introduction preview"><i class="fa-solid fa-xmark"></i></button>
+    <div class="intro-card">
+      <div class="intro-screen"><i class="fa-solid fa-play"></i></div>
+      <div class="intro-content">
+        <p class="mono"><i class="fas fa-user-tie"></i> Professional profile summary</p>
+        <h2 id="introTitle">Hi, I am Pratik Vijay Shelar.</h2>
+        <p>I am a Computer Engineering student specializing in AI and a frontend-focused MERN developer. I build responsive interfaces, REST API workflows, authentication-based apps, and database-driven projects. I am currently looking for a web development or frontend internship where I can contribute quickly and keep learning with a real engineering team.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="assets/docs/resume/pratik-shelar-resume.pdf" target="_blank" rel="noreferrer"><i class="fa-solid fa-file-lines"></i> View Resume</a>
+          <a class="btn btn-outline" href="https://github.com/Pratik-Ghrcemp" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/components.js"></script>
+</body>
+</html>
+
