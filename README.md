@@ -4,13 +4,13 @@
 
 # Pratik Vijay Shelar Portfolio
 
-### Frontend-Focused MERN Developer | Computer Engineering (AI) Student | DSA Learner
+### Web Developer Intern | Frontend-Focused MERN Developer | Final-Year CSE (AI) Student
 
-[![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-Visit_Now-41ead4?style=for-the-badge&logo=netlify&logoColor=111111)](https://pratik-shelar-portfolio.netlify.app)
+[![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-Visit_Now-41ead4?style=for-the-badge&logo=netlify&logoColor=111111)](https://lively-starlight-dffa3f.netlify.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-Pratik--Ghrcemp-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Pratik-Ghrcemp)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Pratik_Shelar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pratik-shelar-6b66a8286/)
 [![Instagram](https://img.shields.io/badge/Instagram-pratikshelar81-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/pratikshelar81/)
-[![Email](https://img.shields.io/badge/Email-shelarpratik914%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shelarpratik914@gmail.com)
+[![Email](https://img.shields.io/badge/Email-shelarpratik201%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shelarpratik201@gmail.com)
 
 </div>
 
@@ -18,17 +18,18 @@
 
 ## About The Portfolio
 
-This repository contains my professional developer portfolio website, designed to present my academic background, technical skills, MERN stack projects, certificates, achievements, blog notes, testimonials, resume, and scorecard documents in one polished responsive experience.
+This repository contains my professional developer portfolio website, designed to present my academic background, Web Developer Intern experience, technical skills, MERN stack projects, certificates, achievements, blog notes, resume, and scorecard documents in one polished responsive experience.
 
-The goal is simple: make the portfolio feel clean, modern, interactive, and recruiter-ready while still satisfying the student portfolio assignment requirements.
+The goal is simple: make the portfolio feel clean, modern, interactive, and recruiter-ready for Web Developer, Frontend, and MERN stack internship opportunities.
 
 ```js
 const pratikShelar = {
-  role: "Frontend-focused MERN Developer",
+  role: "Web Developer Intern + Frontend-focused MERN Developer",
   education: "B.Tech Computer Engineering (Artificial Intelligence)",
   college: "G.H. Raisoni College of Engineering and Management, Pune",
   cgpa: "7.99 / 10",
-  strengths: ["React UI", "REST APIs", "MongoDB", "MySQL", "DSA"],
+  experience: "Web Developer Intern at Originedge Technology",
+  strengths: ["React UI", "REST APIs", "JWT Auth", "MySQL", "MongoDB", "150+ C++ DSA"],
   lookingFor: "Frontend / Web Development Internship"
 };
 ```
@@ -61,8 +62,9 @@ const pratikShelar = {
 | Theme Toggle | Light and dark theme support with local storage persistence |
 | Visual Effects | Three.js background, particles, reveal animations, and custom cursor |
 | Project Showcase | Real screenshots, tech tags, GitHub links, and live project link |
+| Experience Proof | Originedge Technology internship section with React, REST API, and Git workflow details |
 | Academic Proof | Scorecard PDFs, institution images, certificates, and resume download |
-| Contact Flow | Contact links, message form UI, social buttons, and print option |
+| Contact Flow | Professional mail draft opens on Send Message with recruiter/interviewer details |
 
 ## Portfolio Sections
 
@@ -70,7 +72,7 @@ const pratikShelar = {
 
 <img src="assets/images/readme/about-section.png" alt="About section preview" width="100%" />
 
-The about section introduces my developer profile, career objective, student details, college information, interests, and internship focus.
+The about section introduces my developer profile, internship focus, student details, college information, interests, and strongest recruiter signals.
 
 ### Academics
 
@@ -82,18 +84,23 @@ The about section introduces my developer profile, career objective, student det
 | HSC | SCSV Belwandi BK | Scorecard included |
 | SSC | Shri Chhatrapati Shivaji Vidyalaya, Belwandi BK | Scorecard included |
 
-### Participation
+### Experience
 
-<img src="assets/images/readme/participation-section.png" alt="Participation section preview" width="100%" />
+The experience section highlights my ongoing Web Developer Intern work at Originedge Technology, including React.js components, REST API integration, frontend debugging, browser-state testing, Git/GitHub updates, and mentor feedback cycles.
 
-This section presents practical learning areas such as web development, backend APIs, database work, MVC architecture, DSA practice, and AI fundamentals.
+### Development Journey
+
+<img src="assets/images/readme/participation-section.png" alt="Development journey section preview" width="100%" />
+
+This section presents practical learning areas such as internship tasks, web development, backend APIs, database work, MVC architecture, and C++ DSA practice.
 
 ### Achievements
 
 <img src="assets/images/readme/achievements-section.png" alt="Achievements section preview" width="100%" />
 
-- Solved 100+ DSA problems using C++.
+- Solved 150+ DSA problems using C++.
 - Built multiple frontend, CRUD, API, and full-stack projects.
+- Added Web Developer Intern experience at Originedge Technology.
 - Earned GitHub achievements such as Quickdraw, Pull Shark, and YOLO.
 - Documented project work through screenshots, tech stacks, and repository links.
 
@@ -121,13 +128,15 @@ This section presents practical learning areas such as web development, backend 
 
 <img src="assets/images/readme/contact-section.png" alt="Contact section preview" width="100%" />
 
+The contact form is configured for a professional recruiter/interviewer flow. When someone submits the form, their name, email, and message are placed into a pre-filled email draft addressed to `shelarpratik201@gmail.com` with the subject `Portfolio Contact - Interview / Internship Opportunity`.
+
 ## Featured Projects
 
 ### Maintenance Ticket Management System
 
 <img src="assets/images/projects/maintenance-ticket-management/dashboard.png" alt="Maintenance Ticket Management dashboard" width="100%" />
 
-Role-based ticket management system with admin, technician, and user workflows. It includes ticket creation, assignment, status tracking, comments, image uploads, audit logs, authentication, and protected routes.
+Role-based facility maintenance platform with Admin, Technician, and User dashboards, 10+ ticket workflows, JWT authentication, protected routes, Prisma schema design, and MySQL persistence.
 
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=111111)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
@@ -192,16 +201,27 @@ API-based currency converter with live exchange rates, country flags, swap logic
 
 [![Source Code](https://img.shields.io/badge/Source_Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Pratik-Ghrcemp/CurrencyConverter)
 
+### Face Recognition Attendance System
+
+Academic attendance system with face capture, recognition, student enrollment, Tkinter interface, and MySQL attendance records.
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![Tkinter](https://img.shields.io/badge/Tkinter-UI-41ead4?style=flat-square)
+
+[![GitHub Profile](https://img.shields.io/badge/GitHub-View_Profile-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Pratik-Ghrcemp)
+
 ## Skills Snapshot
 
 | Category | Skills |
 | --- | --- |
-| Languages | C++, JavaScript, SQL, Java Basic |
+| Languages | C++, JavaScript, SQL, Java Basic, Python Basic |
 | Frontend | HTML5, CSS3, React.js, Bootstrap, Material UI, Responsive Design |
 | Backend | Node.js, Express.js, REST APIs, JWT, bcrypt |
 | Databases | MongoDB, Mongoose, MySQL, Prisma |
-| Core CS | DSA, OOP, DBMS, MVC, System Design Basics |
-| Tools | Git, GitHub, VS Code, Postman, Render |
+| Core CS | DSA 150+, OOP, DBMS, MVC, Authentication, Authorization |
+| Tools | Git, GitHub, VS Code, Postman, Render, Netlify, Vite |
 | Soft Skills | Problem Solving, Debugging, Collaboration, Quick Learning, Ownership |
 
 ## Developer Metrics
@@ -211,9 +231,11 @@ API-based currency converter with live exchange rates, country flags, swap logic
 | Frontend Development | 88% |
 | Backend Development | 84% |
 | Database Systems | 82% |
-| DSA Practice | 74% |
+| DSA Practice | 78% |
 | Current CGPA | 7.99 / 10 |
-| DSA Problems | 100+ |
+| DSA Problems | 150+ |
+| GitHub Repositories | 15+ |
+| Featured Projects | 6 |
 
 ## Repository Structure
 
@@ -222,6 +244,7 @@ pratik-shelar-portfolio/
 |-- index.html
 |-- README.md
 |-- .gitignore
+|-- docs/
 |-- css/
 |   `-- style.css
 |-- js/
@@ -283,11 +306,11 @@ Recommended settings:
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live_Website-41ead4?style=for-the-badge&logo=netlify&logoColor=111111)](https://pratik-shelar-portfolio.netlify.app)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live_Website-41ead4?style=for-the-badge&logo=netlify&logoColor=111111)](https://lively-starlight-dffa3f.netlify.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-Pratik--Ghrcemp-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Pratik-Ghrcemp)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Pratik_Shelar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pratik-shelar-6b66a8286/)
 [![Instagram](https://img.shields.io/badge/Instagram-pratikshelar81-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/pratikshelar81/)
-[![Email](https://img.shields.io/badge/Email-shelarpratik914%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shelarpratik914@gmail.com)
+[![Email](https://img.shields.io/badge/Email-shelarpratik201%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shelarpratik201@gmail.com)
 
 </div>
 

@@ -38,13 +38,33 @@ printBtn.addEventListener("click", () => window.print());
 
 contactForm.addEventListener("submit", (event) => {
   event.preventDefault();
+  const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     formStatus.textContent = "Please enter a valid email address.";
     formStatus.classList.add("show");
     return;
   }
-  formStatus.textContent = "Thank you, " + document.getElementById("name").value + ". Your message UI is ready for submission.";
+
+  const subject = "Portfolio Contact - Interview / Internship Opportunity";
+  const body = [
+    "Hello Pratik,",
+    "",
+    "I visited your developer portfolio and would like to connect regarding an opportunity.",
+    "",
+    "Recruiter / Interviewer Details:",
+    "Name: " + name,
+    "Email: " + email,
+    "",
+    "Message:",
+    message,
+    "",
+    "Sent from Pratik Vijay Shelar's Developer Portfolio contact form."
+  ].join("\n");
+
+  window.location.href = "mailto:shelarpratik201@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  formStatus.textContent = "Thank you, " + name + ". Your email app is opening with a professional message for Pratik.";
   formStatus.classList.add("show");
   contactForm.reset();
 });
