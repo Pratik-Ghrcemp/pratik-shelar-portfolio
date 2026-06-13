@@ -5,11 +5,16 @@ const contactForm = document.getElementById("contactForm");
 const formStatus = document.getElementById("formStatus");
 const liveClock = document.getElementById("liveClock");
 const quoteLine = document.getElementById("quoteLine");
+const portfolioData = window.portfolioData || {};
+const ui = portfolioData.ui || {};
+const icons = ui.icons || {};
+const formCopy = portfolioData.contactForm || {};
+const icon = (name) => name ? `<i class="${name}"></i>` : "";
 
 const savedTheme = localStorage.getItem("portfolio-theme");
 if (savedTheme) {
   document.documentElement.dataset.theme = savedTheme;
-  themeToggle.innerHTML = savedTheme === "light" ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+  themeToggle.innerHTML = savedTheme === "light" ? icon(icons.themeLight) : icon(icons.themeDark);
 }
 
 navLinks.querySelectorAll("a").forEach((link) => {
@@ -31,7 +36,7 @@ themeToggle.addEventListener("click", () => {
   const nextTheme = isLight ? "dark" : "light";
   document.documentElement.dataset.theme = nextTheme;
   localStorage.setItem("portfolio-theme", nextTheme);
-  themeToggle.innerHTML = isLight ? '<i class="fa-solid fa-moon"></i>' : '<i class="fa-solid fa-sun"></i>';
+  themeToggle.innerHTML = isLight ? icon(icons.themeDark) : icon(icons.themeLight);
 });
 
 printBtn.addEventListener("click", () => window.print());
@@ -42,29 +47,18 @@ contactForm.addEventListener("submit", (event) => {
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    formStatus.textContent = "Please enter a valid email address.";
+    formStatus.textContent = formCopy.invalidEmail || "";
     formStatus.classList.add("show");
     return;
   }
 
-  const subject = "Portfolio Contact - Interview / Internship Opportunity";
-  const body = [
-    "Hello Pratik,",
-    "",
-    "I visited your developer portfolio and would like to connect regarding an opportunity.",
-    "",
-    "Recruiter / Interviewer Details:",
-    "Name: " + name,
-    "Email: " + email,
-    "",
-    "Message:",
-    message,
-    "",
-    "Sent from Pratik Vijay Shelar's Developer Portfolio contact form."
-  ].join("\n");
+  const subject = formCopy.subject || "";
+  const body = (formCopy.bodyLines || []).map((line) => (
+    line.replace("{{name}}", name).replace("{{email}}", email).replace("{{message}}", message)
+  )).join("\n");
 
-  window.location.href = "mailto:shelarpratik201@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-  formStatus.textContent = "Thank you, " + name + ". Your email app is opening with a professional message for Pratik.";
+  window.location.href = "mailto:" + formCopy.recipient + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  formStatus.textContent = (formCopy.success || "").replace("{{name}}", name);
   formStatus.classList.add("show");
   contactForm.reset();
 });
@@ -93,17 +87,12 @@ const counterObserver = new IntersectionObserver((entries, observer) => {
 counters.forEach((counter) => counterObserver.observe(counter));
 
 function updateClock() {
-  liveClock.textContent = "IST " + new Date().toLocaleTimeString("en-IN", { timeZone: "Asia/Kolkata" });
+  liveClock.textContent = portfolioData.footer.clockPrefix + " " + new Date().toLocaleTimeString(portfolioData.ui.time.locale, { timeZone: portfolioData.ui.time.timeZone });
 }
 updateClock();
 setInterval(updateClock, 1000);
 
-const quotes = [
-  "Build quietly. Let the projects speak.",
-  "Consistency turns practice into proof.",
-  "Great software starts with clear thinking.",
-  "DSA sharpens logic. Projects sharpen judgment."
-];
+const quotes = portfolioData.footer.quotes || [];
 quoteLine.textContent = quotes[new Date().getDate() % quotes.length];
 
 

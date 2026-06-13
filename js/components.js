@@ -38,8 +38,10 @@ document.querySelectorAll(".reveal").forEach((item) => revealObserver.observe(it
 document.querySelectorAll(".read-more").forEach((button) => {
   button.addEventListener("click", () => {
     const card = button.closest(".blog-card");
+    const labels = window.portfolioData.sections.blog;
+    const bookOpenIcon = window.portfolioData.ui.icons.bookOpen;
     card.classList.toggle("expanded");
-    button.textContent = card.classList.contains("expanded") ? "Show Less" : "Read More";
+    button.innerHTML = '<i class="' + bookOpenIcon + '"></i> ' + (card.classList.contains("expanded") ? labels.showLessLabel : labels.readMoreLabel);
   });
 });
 

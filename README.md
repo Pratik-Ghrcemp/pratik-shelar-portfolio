@@ -22,17 +22,18 @@ This repository contains my professional developer portfolio website, designed t
 
 The goal is simple: make the portfolio feel clean, modern, interactive, and recruiter-ready for Web Developer, Frontend, and MERN stack internship opportunities.
 
-```js
-const pratikShelar = {
-  role: "Web Developer Intern + Frontend-focused MERN Developer",
-  education: "B.Tech Computer Engineering (Artificial Intelligence)",
-  college: "G.H. Raisoni College of Engineering and Management, Pune",
-  cgpa: "7.99 / 10",
-  experience: "Web Developer Intern at Originedge Technology",
-  strengths: ["React UI", "REST APIs", "JWT Auth", "MySQL", "MongoDB", "150+ C++ DSA"],
-  lookingFor: "Frontend / Web Development Internship"
-};
-```
+## JSON-Driven Architecture
+
+The portfolio content is now stored in `data/portfolio.json`. The HTML file works as a lightweight single-page shell, and `js/render-portfolio.js` dynamically maps JSON sections, cards, links, project data, certificates, skills, blog posts, contact copy, footer content, accessibility labels, icons, and supporting UI text into the interface.
+
+This structure makes the website easier to scale for student portfolio automation: a new student record can be added by changing the JSON payload while keeping the same reusable rendering layer and visual design.
+
+| Requirement | Implementation |
+| --- | --- |
+| JSON Integration | Portfolio copy, navigation, sections, assets, links, contact form copy, footer, icons, accessibility labels, and UI settings live in `data/portfolio.json`. |
+| Dynamic Rendering | `js/render-portfolio.js` fetches the JSON file and builds the visible website sections from that payload. |
+| Lightweight HTML | `index.html` contains only the document shell, root containers, stylesheet/script links, and non-content placeholders. |
+| Batch Automation Ready | The same renderer can be reused with another student JSON payload to produce a different portfolio without editing section markup. |
 
 ## Live Preview
 
@@ -245,11 +246,14 @@ pratik-shelar-portfolio/
 |-- README.md
 |-- .gitignore
 |-- docs/
+|-- data/
+|   `-- portfolio.json
 |-- css/
 |   `-- style.css
 |-- js/
 |   |-- main.js
 |   |-- animations.js
+|   |-- render-portfolio.js
 |   `-- components.js
 `-- assets/
     |-- docs/

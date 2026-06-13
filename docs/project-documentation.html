@@ -276,6 +276,15 @@
         interactive UI elements such as animated hero content, theme switching, responsive navigation,
         project cards, certificate previews, contact form validation, and resume download support.
       </p>
+      <p>
+        The current architecture is JSON-driven. Portfolio content is stored in
+        <strong>data/portfolio.json</strong>, while <strong>js/render-portfolio.js</strong> maps that
+        structured data into reusable UI sections. The HTML acts as a lightweight single-page shell,
+        and visible portfolio content, navigation labels, section copy, assets, contact form copy,
+        footer text, icons, accessibility labels, and UI settings are controlled through the JSON
+        payload. This makes the same design easier to reuse for automated student portfolio
+        generation from future JSON payloads.
+      </p>
 
       <div class="summary-grid">
         <div class="box">
@@ -297,6 +306,7 @@
         <li>Create a professional portfolio website with a strong personal brand.</li>
         <li>Apply modern UI/UX design principles in layout, spacing, typography, and interaction.</li>
         <li>Organize and manage the project using Git and GitHub.</li>
+        <li>Render portfolio content dynamically from a structured JSON data source.</li>
         <li>Deploy a static website using Netlify.</li>
         <li>Improve frontend development skills through real project implementation.</li>
       </ul>
@@ -337,6 +347,11 @@
             <td>Contact Form</td>
             <td>Completed</td>
             <td>Contact form UI includes JavaScript-based email validation and user feedback.</td>
+          </tr>
+          <tr>
+            <td>JSON-Driven Rendering</td>
+            <td>Completed</td>
+            <td>Portfolio content, navigation, UI labels, icons, links, and section data are stored in data/portfolio.json and rendered dynamically by JavaScript.</td>
           </tr>
           <tr>
             <td>Skills and Projects Showcase</td>

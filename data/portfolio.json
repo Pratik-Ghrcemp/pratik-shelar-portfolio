@@ -1,0 +1,342 @@
+{
+  "meta": {
+    "title": "Pratik Vijay Shelar | MERN Stack Developer Portfolio",
+    "description": "Professional portfolio of Pratik Vijay Shelar, final-year CSE (AI) student, Web Developer Intern, MERN stack developer, and C++ DSA learner."
+  },
+  "brand": {
+    "mark": "PS",
+    "name": "Pratik Shelar"
+  },
+  "ui": {
+    "language": "en",
+    "aria": {
+      "brandHome": "Go to home",
+      "themeToggle": "Toggle theme",
+      "menuButton": "Open menu",
+      "backToTop": "Back to top",
+      "closeLightbox": "Close certificate preview",
+      "closeIntro": "Close introduction preview",
+      "mobileProfilePreview": "Student profile preview",
+      "typingLine": "Typing role animation",
+      "portfolioHighlights": "Portfolio highlights",
+      "quickStats": "Quick statistics",
+      "recruiterSnapshot": "Recruiter snapshot",
+      "academicProgressTable": "Academic progress table",
+      "resultLinks": "Ordered academic result links"
+    },
+    "tableHeaders": {
+      "academicProgress": ["Area", "Level", "Progress"]
+    },
+    "icons": {
+      "brandHome": "fa-solid fa-house",
+      "themeDark": "fa-solid fa-moon",
+      "themeLight": "fa-solid fa-sun",
+      "menu": "fa-solid fa-bars",
+      "backToTop": "fa-solid fa-arrow-up",
+      "close": "fa-solid fa-xmark",
+      "calendar": "fas fa-calendar",
+      "university": "fas fa-university",
+      "mapMarker": "fas fa-map-marker-alt",
+      "layerGroup": "fas fa-layer-group",
+      "bolt": "fas fa-bolt",
+      "checkCircle": "fa-solid fa-circle-check",
+      "idCard": "fas fa-id-card",
+      "database": "fas fa-database",
+      "filePdf": "fa-solid fa-file-pdf",
+      "copyright": "far fa-copyright",
+      "quote": "fas fa-quote-left",
+      "clock": "fas fa-clock",
+      "userTie": "fas fa-user-tie",
+      "play": "fa-solid fa-play",
+      "link": "fas fa-link",
+      "paperPlane": "fas fa-paper-plane",
+      "bookOpen": "fas fa-book-open"
+    },
+    "scripts": {
+      "main": "js/main.js",
+      "animations": "js/animations.js",
+      "components": "js/components.js"
+    },
+    "time": {
+      "locale": "en-IN",
+      "timeZone": "Asia/Kolkata"
+    },
+    "fallbacks": {
+      "loadError": "Portfolio data could not be loaded. Please refresh the page."
+    }
+  },
+  "navigation": [
+    { "id": "about", "label": "About", "icon": "fas fa-user" },
+    { "id": "academics", "label": "Academics", "icon": "fas fa-graduation-cap" },
+    { "id": "experience", "label": "Experience", "icon": "fas fa-briefcase" },
+    { "id": "journey", "label": "Journey", "icon": "fas fa-people-group" },
+    { "id": "achievements", "label": "Achievements", "icon": "fas fa-trophy" },
+    { "id": "projects", "label": "Projects", "icon": "fas fa-laptop-code" },
+    { "id": "certificates", "label": "Certificates", "icon": "fas fa-certificate" },
+    { "id": "skills", "label": "Skills", "icon": "fas fa-code-branch" },
+    { "id": "blog", "label": "Blog", "icon": "fas fa-blog" },
+    { "id": "testimonials", "label": "Testimonials", "icon": "fas fa-comment-dots" },
+    { "id": "contact", "label": "Contact", "icon": "fas fa-envelope" }
+  ],
+  "hero": {
+    "eyebrow": { "icon": "fas fa-robot", "text": "Computer Engineering (AI) student" },
+    "name": "Pratik Vijay Shelar",
+    "typingText": "Frontend Intern Ready | MERN Developer | DSA Learner",
+    "lead": "Frontend-focused MERN developer building responsive interfaces, REST APIs, authentication flows, and database-driven systems. I am looking for a web development or frontend internship where I can contribute clean UI, reliable code, and fast learning.",
+    "profileImage": "assets/images/profile/pratik-shelar-profile.png",
+    "profileImageAlt": "Pratik Vijay Shelar profile photograph",
+    "badges": [
+      { "icon": "fa-solid fa-briefcase", "text": "Open to Web Dev Internships" },
+      { "icon": "fa-solid fa-location-dot", "text": "Pune, Maharashtra" },
+      { "icon": "fa-solid fa-code-branch", "text": "15+ GitHub Repositories" }
+    ],
+    "actions": [
+      { "label": "Download Resume", "icon": "fa-solid fa-file-arrow-down", "href": "assets/docs/resume/pratik-shelar-resume.pdf", "variant": "primary", "download": true },
+      { "label": "GitHub", "icon": "fa-brands fa-github", "href": "https://github.com/Pratik-Ghrcemp" },
+      { "label": "LinkedIn", "icon": "fa-brands fa-linkedin", "href": "https://www.linkedin.com/in/pratik-shelar-6b66a8286/" },
+      { "label": "Profile Summary", "icon": "fa-solid fa-circle-play", "buttonId": "videoBtn" },
+      { "label": "Print", "icon": "fa-solid fa-print", "buttonId": "printBtn" }
+    ],
+    "stats": [
+      { "count": 6, "label": "Featured Projects", "icon": "fas fa-folder-open" },
+      { "count": 799, "label": "CGPA 7.99/10", "icon": "fas fa-chart-line" },
+      { "count": 150, "label": "DSA Problems", "icon": "fas fa-code" },
+      { "count": 6, "label": "Certificates", "icon": "fas fa-certificate" }
+    ],
+    "panel": {
+      "location": "Pune, Maharashtra, India",
+      "role": "Full Stack Developer (MERN)",
+      "stack": "React.js, Node.js, Express.js, MongoDB, MySQL, Prisma, JWT, REST APIs",
+      "title": "Internship-ready profile",
+      "items": [
+        "Originedge Web Developer Intern experience",
+        "150+ DSA problems solved using C++",
+        "Current CGPA: 7.99/10"
+      ]
+    }
+  },
+  "sections": {
+    "about": {
+      "eyebrow": { "icon": "fas fa-user", "text": "About me" },
+      "title": "Frontend-focused MERN developer with internship-ready proof.",
+      "note": "Final-year CSE (AI) student building React interfaces, REST API workflows, authentication-based apps, and SQL/MongoDB-backed systems.",
+      "objective": {
+        "title": "Career Objective",
+        "icon": "fas fa-bullseye",
+        "text": "Final-year B.Tech CSE (Artificial Intelligence) student with a 7.99/10 CGPA and Web Developer Intern experience at Originedge Technology. I build responsive React interfaces, REST APIs, authentication flows, and database-driven MERN applications using MySQL, MongoDB, Prisma, and JWT.",
+        "links": [
+          { "label": "Email", "icon": "fa-solid fa-envelope", "href": "mailto:shelarpratik201@gmail.com" },
+          { "label": "Instagram", "icon": "fa-brands fa-instagram", "href": "https://www.instagram.com/pratikshelar81/" }
+        ]
+      },
+      "detailsTitle": "Student Details",
+      "details": [
+        { "label": "Full Name", "icon": "fas fa-user", "value": "Pratik Vijay Shelar" },
+        { "label": "Date of Birth", "icon": "fas fa-calendar", "value": "29/04/2005" },
+        { "label": "Role", "icon": "fas fa-graduation-cap", "value": "Final-year CSE (AI) Student, Web Developer Intern" },
+        { "label": "College", "icon": "fas fa-university", "value": "G.H. Raisoni College of Engineering and Management, Pune" },
+        { "label": "University", "icon": "fas fa-building-columns", "value": "Savitribai Phule Pune University" },
+        { "label": "Location", "icon": "fas fa-location-dot", "value": "Pune, Maharashtra, India" },
+        { "label": "Interests", "icon": "fas fa-heart", "value": "Full-stack development, DSA, AI fundamentals, databases" }
+      ],
+      "snapshot": [
+        { "label": "Best fit", "icon": "fas fa-star", "value": "Frontend / Web Developer Intern" },
+        { "label": "Strength", "icon": "fas fa-chart-simple", "value": "React UI, APIs, CRUD systems" },
+        { "label": "Proof", "icon": "fas fa-file-alt", "value": "15+ repos, 6 featured projects" },
+        { "label": "Learning", "icon": "fas fa-graduation-cap", "value": "150+ C++ DSA problems" }
+      ]
+    },
+    "academics": {
+      "eyebrow": { "icon": "fas fa-chart-line", "text": "Academic performance" },
+      "title": "Education, CGPA, and scorecard evidence.",
+      "note": "Academic progress and supporting documents are organized for quick review alongside the developer profile.",
+      "education": [
+        { "period": "2023 - 2026 Current", "meta": "B.Tech CSE (Artificial Intelligence)", "icon": "fas fa-microchip", "title": "G.H. Raisoni College of Engineering and Management, Pune", "text": "VI Semester completed; entering final year. Current CGPA: 7.99/10." },
+        { "period": "2021 - 2023", "meta": "11th & 12th HSC", "icon": "fas fa-book", "title": "SCSV Belwandi BK", "text": "Higher secondary education record included through local HSC score card PDF." },
+        { "period": "2021", "meta": "10th SSC", "icon": "fas fa-school", "title": "Shri Chhatrapati Shivaji Vidyalaya, Belwandi BK", "text": "SSC academic foundation record included through the local score card folder." }
+      ],
+      "assetsTitle": "Academic Assets",
+      "assetsText": "Institution images and score card PDFs are linked below for quick review. Overall equivalent academic progress: 79.9% based on CGPA 7.99/10.",
+      "progress": [
+        { "area": "Current CGPA", "icon": "fas fa-chart-line", "level": "7.99/10", "value": "79.9%" },
+        { "area": "Web Development", "icon": "fab fa-react", "level": "Strong", "value": "88%" },
+        { "area": "Database Systems", "icon": "fas fa-database", "level": "Strong", "value": "82%" },
+        { "area": "DSA Practice", "icon": "fas fa-code", "level": "150+ Problems", "value": "78%" }
+      ],
+      "institutions": [
+        { "image": "assets/images/institutions/ug-college.png", "alt": "G.H. Raisoni College institution image", "label": "UG College - B.Tech CSE (AI)", "icon": "fas fa-university" },
+        { "image": "assets/images/institutions/hsc-college.png", "alt": "HSC college institution image", "label": "HSC College - 11th & 12th", "icon": "fas fa-school" },
+        { "image": "assets/images/institutions/ssc-school.png", "alt": "SSC school institution image", "label": "SSC School - 10th", "icon": "fas fa-school-flag" }
+      ],
+      "scorecards": [
+        { "title": "UG Semester Results", "icon": "fas fa-graduation-cap", "subtitle": "B.Tech CSE (AI)", "links": [
+          { "label": "Semester I", "href": "assets/docs/scorecards/semester-1.pdf" },
+          { "label": "Semester II", "href": "assets/docs/scorecards/semester-2.pdf" },
+          { "label": "Semester III", "href": "assets/docs/scorecards/semester-3.pdf" },
+          { "label": "Semester IV", "href": "assets/docs/scorecards/semester-4.pdf" },
+          { "label": "Semester V", "href": "assets/docs/scorecards/semester-5.pdf" },
+          { "label": "Semester VI", "href": "assets/docs/scorecards/semester-6.pdf" }
+        ] },
+        { "title": "HSC Result", "icon": "fas fa-book-open", "subtitle": "12th", "links": [ { "label": "HSC Score Card", "href": "assets/docs/scorecards/hsc.pdf" } ] },
+        { "title": "SSC Result", "icon": "fas fa-school", "subtitle": "10th", "links": [ { "label": "SSC Score Card", "href": "assets/docs/scorecards/ssc.pdf" } ] }
+      ]
+    },
+    "journey": {
+      "eyebrow": { "icon": "fas fa-people-arrows", "text": "Development journey" },
+      "title": "Training, internship work, and project-based learning.",
+      "note": "The portfolio combines internship tasks, structured training, GitHub projects, and steady C++ problem solving.",
+      "items": [
+        { "icon": "fa-solid fa-briefcase", "titleIcon": "fas fa-building", "title": "Originedge Internship", "text": "Working on React.js components, REST API integration, frontend debugging, Git/GitHub updates, and mentor feedback cycles." },
+        { "icon": "fa-solid fa-code", "titleIcon": "fas fa-globe", "title": "Web Development", "text": "Built responsive pages, React interfaces, Bootstrap layouts, reusable components, and Vite applications." },
+        { "icon": "fa-solid fa-server", "titleIcon": "fas fa-plug", "title": "Backend APIs", "text": "Created Express.js REST APIs with JWT authentication, validation, protected routes, and structured controllers." },
+        { "icon": "fa-solid fa-database", "titleIcon": "fas fa-table", "title": "Database Practice", "text": "Worked with MongoDB, Mongoose, MySQL, Prisma ORM, relationships, seed data, and CRUD operations." },
+        { "icon": "fa-solid fa-diagram-project", "titleIcon": "fas fa-sitemap", "title": "MVC Architecture", "text": "Practiced project organization through routes, controllers, models, middleware, services, and utilities." },
+        { "icon": "fa-solid fa-brain", "titleIcon": "fas fa-chart-line", "title": "DSA Learning", "text": "Solved 150+ problems using C++ across arrays, strings, recursion, searching, sorting, and logic building." }
+      ]
+    },
+    "experience": {
+      "eyebrow": { "icon": "fas fa-briefcase", "text": "Experience" },
+      "title": "Web Developer Intern at Originedge Technology.",
+      "note": "Current internship work adds real team workflow, code iteration, and production-style frontend practice to the project portfolio.",
+      "items": [
+        { "period": "Ongoing", "meta": "React.js, REST APIs, Git/GitHub", "icon": "fab fa-react", "title": "Web Developer Intern - Originedge Technology", "text": "Develop reusable React.js components and responsive page sections, integrate REST APIs, resolve frontend bugs, test UI behavior across browser states, and maintain structured Git/GitHub updates from mentor feedback." }
+      ]
+    },
+    "achievements": {
+      "eyebrow": { "icon": "fas fa-medal", "text": "Achievements" },
+      "title": "Measurable progress and portfolio milestones.",
+      "note": "Achievement content highlights DSA practice, GitHub activity, internship growth, and documented project work.",
+      "items": [
+        { "icon": "fa-solid fa-check-circle", "titleIcon": "fas fa-code", "title": "150+ DSA Problems", "text": "Solved using C++, improving problem-solving skills in arrays, strings, recursion, searching, sorting, and logic building." },
+        { "icon": "fa-solid fa-check-circle", "titleIcon": "fab fa-github", "title": "15+ GitHub Repositories", "text": "Maintained public repositories across MERN stack, SQL, REST APIs, CRUD apps, frontend apps, games, and AI/computer vision basics." },
+        { "icon": "fa-solid fa-check-circle", "titleIcon": "fab fa-github-alt", "title": "GitHub Achievements", "text": "Earned Quickdraw, Pull Shark, and YOLO badges while practicing public code contribution and repository maintenance." },
+        { "icon": "fa-solid fa-check-circle", "titleIcon": "fas fa-briefcase", "title": "Internship Workflow", "text": "Practiced React component development, frontend debugging, API integration, and Git-based mentor feedback cycles." }
+      ]
+    },
+    "projects": {
+      "eyebrow": { "icon": "fas fa-laptop-code", "text": "Projects" },
+      "title": "Featured projects with code, UI evidence, and stack details.",
+      "note": "Projects show practical frontend, backend, database, authentication, API, and deployment experience.",
+      "items": [
+        { "title": "Maintenance Ticket Management Web Application", "icon": "fas fa-ticket", "image": "assets/images/projects/maintenance-ticket-management/dashboard.png", "alt": "Maintenance ticket management dashboard", "description": "Full-stack ticket management system with login, dashboard, ticket creation, detail views, master data, role-based workflow, and database-backed CRUD operations.", "back": "Full-stack operational app with authentication, tickets, master data, dashboard metrics, and structured backend APIs.", "tags": ["React", "Node", "Express", "MySQL", "Prisma", "JWT"], "links": [ { "label": "Code", "icon": "fa-brands fa-github", "href": "https://github.com/Pratik-Ghrcemp/maintenance-ticket-management-web-application" } ] },
+        { "title": "WanderLust Stays", "icon": "fas fa-hotel", "image": "assets/images/projects/wanderlust-stays/listings-feed.png", "alt": "WanderLust listings feed", "description": "Airbnb-style MERN project with property listings, user auth, reviews, owner controls, map location support, image uploads, and deployment on Render.", "back": "MERN travel listing app with authentication, reviews, owner features, maps, uploads, and deployed backend.", "tags": ["MongoDB", "Express", "React", "Node", "Render"], "links": [ { "label": "Code", "icon": "fa-brands fa-github", "href": "https://github.com/Pratik-Ghrcemp/WanderLust-Stays" }, { "label": "Live", "icon": "fa-solid fa-arrow-up-right-from-square", "href": "https://wanderlust-stays-i4o9.onrender.com" } ] },
+        { "title": "React Weather App", "icon": "fas fa-cloud-sun", "image": "assets/images/projects/react-weather-app/sunny.png", "alt": "React weather app sunny preview", "description": "Responsive weather dashboard with city search, loading/error states, dynamic visuals, live OpenWeather API data, and Material UI layout.", "back": "Live weather search with OpenWeather API, Material UI cards, dynamic weather visuals, loading states, and error handling.", "tags": ["React", "Vite", "Material UI", "OpenWeather API"], "links": [ { "label": "Code", "icon": "fa-brands fa-github", "href": "https://github.com/Pratik-Ghrcemp/react-weather-app" } ] },
+        { "title": "Mini WhatsApp CRUD Chat App", "icon": "fab fa-whatsapp", "image": "assets/images/projects/mini-whatsapp/code-output.png", "alt": "Mini WhatsApp CRUD app output", "description": "Server-rendered chat CRUD application with Express.js, MongoDB, Mongoose, EJS templates, method override, and responsive custom CSS.", "back": "MongoDB CRUD chat app with Express routes, EJS views, method override, timestamps, and responsive WhatsApp-style UI.", "tags": ["Node", "Express", "MongoDB", "EJS", "CRUD"], "links": [ { "label": "GitHub", "icon": "fa-brands fa-github", "href": "https://github.com/Pratik-Ghrcemp" } ] },
+        { "title": "Currency Converter", "icon": "fas fa-money-bill-transfer", "visualIcon": "fa-solid fa-arrow-right-arrow-left", "visualLabel": "Currency Converter", "description": "Responsive currency converter with live exchange rates, country flags, swap feature, light/dark mode, and API error states.", "back": "API-based currency converter with live rates, swap logic, country flags, dark mode, and error states.", "tags": ["HTML", "CSS", "JavaScript", "API"], "links": [ { "label": "Code", "icon": "fa-brands fa-github", "href": "https://github.com/Pratik-Ghrcemp/CurrencyConverter" } ] },
+        { "title": "Face Recognition Attendance System", "icon": "fas fa-user-check", "image": "assets/images/projects/wanderlust-stays/location-map.png", "alt": "Map feature screenshot used as technical placeholder", "description": "Academic attendance system with face capture, recognition, student enrollment, Tkinter interface, and MySQL attendance records.", "back": "Python + OpenCV attendance system with face capture, recognition, student enrollment, and MySQL attendance records.", "tags": ["Python", "OpenCV", "MySQL", "Tkinter"], "links": [ { "label": "Portfolio", "icon": "fa-brands fa-github", "href": "https://github.com/Pratik-Ghrcemp" } ] }
+      ]
+    },
+    "certificates": {
+      "eyebrow": { "icon": "fas fa-certificate", "text": "Certificates gallery" },
+      "title": "Interactive certificate and learning proof gallery.",
+      "note": "Click any certificate to open it in a lightbox.",
+      "items": [
+        { "title": "Web Development", "icon": "fas fa-code", "image": "assets/images/certificates/web-development.png", "alt": "Web Development certificate" },
+        { "title": "Front-End", "icon": "fas fa-laptop-code", "image": "assets/images/certificates/frontend.png", "alt": "Front-End certificate" },
+        { "title": "MongoDB", "icon": "fas fa-database", "image": "assets/images/certificates/mongodb.png", "alt": "MongoDB certificate" },
+        { "title": "MySQL", "icon": "fas fa-database", "image": "assets/images/certificates/mysql.png", "alt": "MySQL certificate" },
+        { "title": "C++", "icon": "fab fa-cuttlefish", "image": "assets/images/certificates/cpp.png", "alt": "C++ certificate" },
+        { "title": "AI / ML", "icon": "fas fa-robot", "image": "assets/images/certificates/aiml.png", "alt": "AI ML certificate" }
+      ]
+    },
+    "skills": {
+      "eyebrow": { "icon": "fas fa-cubes", "text": "Skills matrix" },
+      "title": "Technical, academic, and professional skills.",
+      "note": "Skills are grouped around the resume target: frontend internships, MERN stack work, API integration, and C++ DSA practice.",
+      "rings": [
+        { "label": "Frontend", "icon": "fas fa-laptop-code", "percent": 88 },
+        { "label": "Backend", "icon": "fas fa-server", "percent": 84 },
+        { "label": "Database", "icon": "fas fa-database", "percent": 82 },
+        { "label": "DSA", "icon": "fas fa-diagram-project", "percent": 78 }
+      ],
+      "groups": [
+        { "title": "Languages", "icon": "fas fa-code", "items": ["C++", "JavaScript", "SQL", "Java Basic", "Python Basic"] },
+        { "title": "Frontend", "icon": "fas fa-laptop-code", "items": ["HTML5", "CSS3", "React.js", "Bootstrap", "Material UI"] },
+        { "title": "Backend", "icon": "fas fa-server", "items": ["Node.js", "Express.js", "REST APIs", "JWT", "bcrypt"] },
+        { "title": "Databases", "icon": "fas fa-database", "items": ["MongoDB", "Mongoose", "MySQL", "Prisma"] },
+        { "title": "Tools", "icon": "fas fa-tools", "items": ["Git", "GitHub", "VS Code", "Postman", "Render", "Netlify", "Vite"] },
+        { "title": "Core CS", "icon": "fas fa-microchip", "items": ["DSA 150+", "OOP", "DBMS", "MVC", "Authentication", "Authorization"] },
+        { "title": "Soft Skills", "icon": "fas fa-hand-peace", "items": ["Problem Solving", "Debugging", "Team Collaboration", "Quick Learning", "Ownership"] }
+      ]
+    },
+    "blog": {
+      "eyebrow": { "icon": "fas fa-blog", "text": "Student blog" },
+      "title": "Short notes on learning and project work.",
+      "note": "Concise developer notes that explain how I think about projects, practice, and continuous learning.",
+      "readMoreLabel": "Read More",
+      "showLessLabel": "Show Less",
+      "items": [
+        { "date": "June 2026", "title": "My Journey from Student to MERN Stack Developer", "icon": "fas fa-road", "summary": "I started with frontend basics, moved into backend routing and databases, and gradually connected both sides through full-stack projects.", "more": "This journey helped me understand how UI, APIs, validation, and databases work together in real applications." },
+        { "date": "June 2026", "title": "What I Learned While Building Full Stack Projects", "icon": "fas fa-graduation-cap", "summary": "Real projects taught me authentication, protected routes, schema design, API testing, validation, uploads, deployment, and debugging discipline.", "more": "The biggest lesson was that clean structure matters as much as adding features." },
+        { "date": "June 2026", "title": "Why DSA and Projects Both Matter for Developers", "icon": "fas fa-chart-line", "summary": "DSA improves structured thinking, while projects teach product flow, user experience, and practical engineering decisions.", "more": "Together, they build both interview confidence and practical engineering maturity." }
+      ]
+    },
+    "testimonials": {
+      "eyebrow": { "icon": "fas fa-comment-dots", "text": "Testimonials" },
+      "title": "Signals from learning, review, and collaboration.",
+      "note": "A compact credibility section focused on learning consistency, project ownership, and team workflow.",
+      "items": [
+        { "role": "Learning Signal", "icon": "fas fa-chalkboard-user", "title": "Consistent learner", "text": "Pratik shows steady improvement in software fundamentals and applies classroom concepts through practical development projects." },
+        { "role": "Internship Signal", "icon": "fas fa-briefcase", "title": "Frontend workflow", "text": "Internship tasks are helping him practice reusable components, API integration, debugging, and fast iteration from feedback." },
+        { "role": "Project Review", "icon": "fas fa-eye", "title": "Project ownership", "text": "His portfolio reflects initiative, documentation effort, and the ability to connect frontend, backend, and database workflows." },
+        { "role": "Collaboration Signal", "icon": "fas fa-users", "title": "Team mindset", "text": "Pratik is comfortable discussing problems, debugging issues, and learning new tools needed to complete a feature." }
+      ]
+    },
+    "contact": {
+      "eyebrow": { "icon": "fas fa-address-card", "text": "Contact" },
+      "title": "Let's connect.",
+      "note": "Use the resume, email, GitHub, or LinkedIn links to review work and connect for internship opportunities.",
+      "linksTitle": "Contact Links",
+      "formTitle": "Send a Message",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "Your email",
+      "messagePlaceholder": "Your message",
+      "buttonLabel": "Send Message",
+      "links": [
+        { "label": "shelarpratik201@gmail.com", "icon": "fa-solid fa-envelope", "href": "mailto:shelarpratik201@gmail.com" },
+        { "label": "github.com/Pratik-Ghrcemp", "icon": "fa-brands fa-github", "href": "https://github.com/Pratik-Ghrcemp" },
+        { "label": "linkedin.com/in/pratik-shelar-6b66a8286", "icon": "fa-brands fa-linkedin", "href": "https://www.linkedin.com/in/pratik-shelar-6b66a8286/" },
+        { "label": "instagram.com/pratikshelar81", "icon": "fa-brands fa-instagram", "href": "https://www.instagram.com/pratikshelar81/" }
+      ]
+    }
+  },
+  "contactForm": {
+    "recipient": "shelarpratik201@gmail.com",
+    "subject": "Portfolio Contact - Interview / Internship Opportunity",
+    "invalidEmail": "Please enter a valid email address.",
+    "bodyLines": [
+      "Hello Pratik,",
+      "",
+      "I visited your developer portfolio and would like to connect regarding an opportunity.",
+      "",
+      "Recruiter / Interviewer Details:",
+      "Name: {{name}}",
+      "Email: {{email}}",
+      "",
+      "Message:",
+      "{{message}}",
+      "",
+      "Sent from Pratik Vijay Shelar's Developer Portfolio contact form."
+    ],
+    "success": "Thank you, {{name}}. Your email app is opening with a professional message for Pratik."
+  },
+  "intro": {
+    "label": "Professional profile summary",
+    "title": "Hi, I am Pratik Vijay Shelar.",
+    "text": "I am a final-year Computer Engineering student specializing in AI, a Web Developer Intern at Originedge Technology, and a frontend-focused MERN developer. I build responsive interfaces, REST API workflows, authentication-based apps, and database-driven projects, with 150+ C++ DSA problems solved and 15+ GitHub repositories.",
+    "actions": [
+      { "label": "View Resume", "icon": "fa-solid fa-file-lines", "href": "assets/docs/resume/pratik-shelar-resume.pdf", "variant": "primary" },
+      { "label": "GitHub", "icon": "fa-brands fa-github", "href": "https://github.com/Pratik-Ghrcemp" }
+    ]
+  },
+  "footer": {
+    "copyright": "2026 Pratik Vijay Shelar - Developer Portfolio",
+    "quotes": [
+      "Build quietly. Let the projects speak.",
+      "Consistency turns practice into proof.",
+      "Great software starts with clear thinking.",
+      "DSA sharpens logic. Projects sharpen judgment."
+    ],
+    "clockPrefix": "IST"
+  }
+}

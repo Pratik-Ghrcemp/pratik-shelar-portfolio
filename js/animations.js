@@ -6,7 +6,7 @@ if (window.matchMedia("(pointer: fine)").matches && window.innerWidth > 680) {
   document.body.classList.add("enhanced-cursor");
 }
 
-const typingText = "Frontend Intern Ready | MERN Developer | DSA Learner";
+const typingText = window.portfolioData.hero.typingText;
 let typingIndex = 0;
 function typeRole() {
   typingLine.textContent = typingText.slice(0, typingIndex);
