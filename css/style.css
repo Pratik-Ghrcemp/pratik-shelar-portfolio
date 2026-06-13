@@ -11,6 +11,7 @@
       --success: #77dd77;
       --shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
       --radius: 8px;
+      --radius-sm: 6px;
     }
 
     [data-theme="light"] {
@@ -1348,7 +1349,7 @@
       right: 18px;
     }
 
-    @media (max-width: 1060px) {
+    @media (max-width: 1180px) {
       .nav-links {
         position: absolute;
         inset: 76px 20px auto 20px;

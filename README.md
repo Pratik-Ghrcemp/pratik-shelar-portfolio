@@ -283,10 +283,10 @@ pratik-shelar-portfolio/
 ```bash
 git clone https://github.com/Pratik-Ghrcemp/Pratik-Shelar-Portfolio.git
 cd Pratik-Shelar-Portfolio
-code .
+python -m http.server 4173
 ```
 
-Open `index.html` directly in a browser, or run it with the VS Code Live Server extension.
+Open `http://localhost:4173` in a browser, or run the project with the VS Code Live Server extension. A local/static server is recommended because the portfolio fetches `data/portfolio.json` dynamically.
 
 ## Deployment
 
