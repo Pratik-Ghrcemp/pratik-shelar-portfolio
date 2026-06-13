@@ -35,6 +35,12 @@ This structure makes the website easier to scale for student portfolio automatio
 | Lightweight HTML | `index.html` contains only the document shell, root containers, stylesheet/script links, and non-content placeholders. |
 | Batch Automation Ready | The same renderer can be reused with another student JSON payload to produce a different portfolio without editing section markup. |
 
+## GEMA Student Portfolio Automation Demo
+
+The live portfolio now includes an **Automation** section that directly demonstrates the requested GEMA use case. It shows how a batch JSON payload can map fields such as `student_name`, `school_name`, `grade_section`, `participation_category`, `certificate_type`, `issue_date`, verification documents, parent/contact details, statistical data, education, certificates, and experience into reusable portfolio UI blocks.
+
+The same structure can be adapted into WordPress through custom fields or plugin data sources, including LearnPress progress data, Gamify achievement records, student certificate pages, and bulk-generated club portfolio profiles.
+
 ## Live Preview
 
 | Desktop Experience | Mobile Experience |
@@ -65,6 +71,7 @@ This structure makes the website easier to scale for student portfolio automatio
 | Project Showcase | Real screenshots, tech tags, GitHub links, and live project link |
 | Experience Proof | Originedge Technology internship section with React, REST API, and Git workflow details |
 | Academic Proof | Scorecard PDFs, institution images, certificates, and resume download |
+| JSON Automation Demo | Batch-ready student portfolio mapping section for GEMA-style records |
 | Contact Flow | Professional mail draft opens on Send Message with recruiter/interviewer details |
 
 ## Portfolio Sections
@@ -84,6 +91,10 @@ The about section introduces my developer profile, internship focus, student det
 | B.Tech CSE (AI) | G.H. Raisoni College of Engineering and Management, Pune | Current CGPA 7.99/10 |
 | HSC | SCSV Belwandi BK | Scorecard included |
 | SSC | Shri Chhatrapati Shivaji Vidyalaya, Belwandi BK | Scorecard included |
+
+### Automation
+
+The automation section demonstrates how student records can be generated from JSON data while keeping the same UI template. It includes a workflow, supported field map, sample student records, and WordPress LMS readiness notes for LearnPress/Gamify-style integrations.
 
 ### Experience
 

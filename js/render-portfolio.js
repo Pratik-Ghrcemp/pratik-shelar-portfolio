@@ -109,6 +109,7 @@
     </section>
     ${renderAbout(data.sections.about)}
     ${renderAcademics(data.sections.academics)}
+    ${renderAutomation(data.sections.automation)}
     ${renderJourney(data.sections.journey)}
     ${renderExperience(data.sections.experience)}
     ${renderAchievements(data.sections.achievements)}
@@ -226,6 +227,45 @@
           ${sectionHead(section)}
           <div class="journey-grid">
             ${section.items.map((item) => `<article class="journey-card">${icon(item.icon)}<h3>${icon(item.titleIcon)} ${safe(item.title)}</h3><p>${safe(item.text)}</p></article>`).join("")}
+          </div>
+        </div>
+      </section>
+    `;
+  }
+
+  function renderAutomation(section) {
+    return `
+      <section id="automation">
+        <div class="container">
+          ${sectionHead(section)}
+          <div class="automation-grid">
+            <div class="card">
+              <h3>${icon(ui.icons.layerGroup)} ${safe(section.workflowTitle)}</h3>
+              <div class="journey-grid automation-steps">
+                ${section.workflow.map((item) => `<article class="journey-card">${icon(item.icon)}<h3>${safe(item.title)}</h3><p>${safe(item.text)}</p></article>`).join("")}
+              </div>
+            </div>
+            <div class="card">
+              <h3>${icon(ui.icons.database)} ${safe(section.fieldsTitle)}</h3>
+              <div class="tags">${section.supportedFields.map(tag).join("")}</div>
+            </div>
+            <div class="card">
+              <h3>${icon(ui.icons.idCard)} ${safe(section.sampleTitle)}</h3>
+              <div class="sample-students">
+                ${section.sampleStudents.map((student) => `
+                  <article class="sample-student">
+                    <h4>${safe(student.studentName)}</h4>
+                    <div class="info-grid">
+                      <div class="info-item"><span>School</span>${safe(student.school)}</div>
+                      <div class="info-item"><span>Grade</span>${safe(student.grade)}</div>
+                      <div class="info-item"><span>Category</span>${safe(student.category)}</div>
+                      <div class="info-item"><span>Certificate</span>${safe(student.certificate)}</div>
+                    </div>
+                    <div class="tags">${student.mappedSections.map(tag).join("")}</div>
+                  </article>
+                `).join("")}
+              </div>
+            </div>
           </div>
         </div>
       </section>

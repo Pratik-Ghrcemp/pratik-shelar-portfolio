@@ -23,7 +23,7 @@ introModal.addEventListener("click", (event) => {
   if (event.target === introModal) hideIntro();
 });
 
-document.querySelectorAll("section, .card, .project-card, .journey-card, .certificate-card, .blog-card, .testimonial-card").forEach((item) => {
+document.querySelectorAll("section, .card, .project-card, .journey-card, .certificate-card, .blog-card, .testimonial-card, .sample-student").forEach((item) => {
   item.classList.add("reveal");
 });
 

@@ -68,6 +68,7 @@
   "navigation": [
     { "id": "about", "label": "About", "icon": "fas fa-user" },
     { "id": "academics", "label": "Academics", "icon": "fas fa-graduation-cap" },
+    { "id": "automation", "label": "Automation", "icon": "fas fa-gears" },
     { "id": "experience", "label": "Experience", "icon": "fas fa-briefcase" },
     { "id": "journey", "label": "Journey", "icon": "fas fa-people-group" },
     { "id": "achievements", "label": "Achievements", "icon": "fas fa-trophy" },
@@ -179,6 +180,55 @@
         ] },
         { "title": "HSC Result", "icon": "fas fa-book-open", "subtitle": "12th", "links": [ { "label": "HSC Score Card", "href": "assets/docs/scorecards/hsc.pdf" } ] },
         { "title": "SSC Result", "icon": "fas fa-school", "subtitle": "10th", "links": [ { "label": "SSC Score Card", "href": "assets/docs/scorecards/ssc.pdf" } ] }
+      ]
+    },
+    "automation": {
+      "eyebrow": { "icon": "fas fa-gears", "text": "GEMA automation readiness" },
+      "title": "Batch-ready student portfolio generation from JSON.",
+      "note": "This section demonstrates how the same portfolio layout can map structured student records into reusable UI blocks for GEMA Clubs, LMS workflows, and future WordPress integration.",
+      "workflowTitle": "Automation Workflow",
+      "workflow": [
+        { "icon": "fas fa-file-code", "title": "JSON Payload", "text": "Student records are stored in a structured JSON payload with student info, school info, participation data, documents, contact details, and portfolio sections." },
+        { "icon": "fas fa-diagram-project", "title": "Reusable Mapper", "text": "The renderer reads the JSON keys and maps them into consistent portfolio cards, academic blocks, certificate sections, document links, and contact panels." },
+        { "icon": "fas fa-layer-group", "title": "Single UI Template", "text": "The visual design remains reusable while each student profile can change through data only, making bulk updates faster and less error-prone." },
+        { "icon": "fab fa-wordpress", "title": "WordPress LMS Ready", "text": "The same data structure can be adapted for WordPress custom fields, LearnPress course progress, Gamify achievements, and certificate pages." }
+      ],
+      "fieldsTitle": "Supported JSON Fields",
+      "supportedFields": [
+        "student_name",
+        "school_name",
+        "grade_section",
+        "participation_category",
+        "certificate_type",
+        "issue_date",
+        "verification_documents",
+        "email",
+        "parent_details",
+        "address",
+        "school_incharge_contact",
+        "statistical_data",
+        "education",
+        "certificates",
+        "experience"
+      ],
+      "sampleTitle": "Sample Student Records",
+      "sampleStudents": [
+        {
+          "studentName": "Sample GEMA Student A",
+          "school": "GEMA Partner School",
+          "grade": "Grade 8 - Section A",
+          "category": "Coding Club",
+          "certificate": "Participation Certificate",
+          "mappedSections": ["Profile", "Academics", "Certificates", "Verification Docs"]
+        },
+        {
+          "studentName": "Sample GEMA Student B",
+          "school": "International Online Learner",
+          "grade": "Grade 6 - Section B",
+          "category": "STEM Activity",
+          "certificate": "Achievement Certificate",
+          "mappedSections": ["Profile", "Statistics", "Experience", "Contact"]
+        }
       ]
     },
     "journey": {

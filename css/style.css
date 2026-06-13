@@ -811,6 +811,7 @@
     }
 
     .journey-grid,
+    .automation-grid,
     .project-grid,
     .certificate-grid,
     .skills-grid,
@@ -829,6 +830,41 @@
       background: linear-gradient(180deg, rgba(16, 38, 42, 0.9), rgba(10, 24, 27, 0.86));
       backdrop-filter: blur(14px);
       transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .automation-grid {
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: start;
+    }
+
+    .automation-grid > .card:first-child {
+      grid-column: 1 / -1;
+    }
+
+    .automation-steps {
+      margin-top: 16px;
+    }
+
+    .automation-steps .journey-card {
+      min-height: 190px;
+    }
+
+    .sample-students {
+      display: grid;
+      gap: 16px;
+    }
+
+    .sample-student {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      background: rgba(255, 255, 255, 0.045);
+    }
+
+    .sample-student h4 {
+      margin: 0 0 12px;
+      color: var(--text);
+      font-size: 1rem;
     }
 
     .journey-card i {
@@ -1345,6 +1381,7 @@
 
       .stats-grid,
       .journey-grid,
+      .automation-grid,
       .project-grid,
       .certificate-grid,
       .skills-grid,
@@ -1452,6 +1489,7 @@
 
       .stats-grid,
       .journey-grid,
+      .automation-grid,
       .project-grid,
       .certificate-grid,
       .skills-grid,
